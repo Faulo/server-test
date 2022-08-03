@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+    apache:
+        container_name: apache
+        build: .
+        volumes:
+            - ./public:/usr/share/nginx/html
+        ports:
+            - 8081:80
